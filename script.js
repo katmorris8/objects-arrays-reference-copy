@@ -42,6 +42,14 @@ const team4 = [...players];
 const team5 = Array.from(players);
 
 const person = {
-    name: 'Wes Bos',
-    age: 80
+    name: 'Joe Morris',
+    age: 60
 };
+
+const captain = person;
+captain.number = 99;
+
+const cap2 = Object.assign({}, person, { number: 99, age: 12 });
+console.log(cap2);
+
+const cap3 = {...person};
