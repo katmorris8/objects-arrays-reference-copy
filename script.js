@@ -36,6 +36,7 @@
 
 // Things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method, but you should think twice before using it.
 
+
 // strings, numbers, booleans
 
 let age = 100;
@@ -44,3 +45,19 @@ console.log(age, age2);
 age = 200
 console.log(age, age2);
 
+
+// arrays
+
+const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
+
+const team = players;
+
+const team2 = players.slice();
+const team3 = [].concat(players);
+const team4 = [...players];
+const team5 = Array.from(players);
+
+const person = {
+    name: 'Wes Bos',
+    age: 80
+};
