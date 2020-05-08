@@ -1,7 +1,6 @@
 // start with strings, numbers and booleans
 
 // Let's say we have an array
-const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
 
 // and we want to make a copy of it.
 
@@ -28,10 +27,6 @@ const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
 // The same thing goes for objects, let's say we have a person object
 
 // with Objects
-const person = {
-    name: 'Wes Bos',
-    age: 80
-};
 
 // and think we make a copy:
 
@@ -40,3 +35,12 @@ const person = {
 // We will hopefully soon see the object ...spread
 
 // Things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method, but you should think twice before using it.
+
+// strings, numbers, booleans
+
+let age = 100;
+let age2 = age;
+console.log(age, age2);
+age = 200
+console.log(age, age2);
+
